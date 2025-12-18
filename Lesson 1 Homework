@@ -1,0 +1,12 @@
+#include <iostream> // Library to get inputs and outputs
+// Comment style One, for short comment
+/*
+ Commnent style two for 
+longeeerrrrr
+*/
+
+int main()
+{
+  std::cout << "Hello World!";
+  return 0;
+}
