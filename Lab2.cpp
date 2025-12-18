@@ -1,17 +1,22 @@
 #include <iostream>
 using namespace std;
+
 int main() {
     string name;
-    cout  << "What is your name?";
-    cin  >> name;
-    string origin;
-    cout << "where are you from?"; 
-    cin  >> origin;
-    string movie, movie2; 
-    cout  << "what is your favorite movie?";
-    cin  >> movie >> movie2;
+    cout << "What is your name? ";
+    getline(cin, name);
 
-    cout << " Hello " << name << " from " << origin << endl; 
-    cout << " Lets watch "  << movie << " " << movie2 <<  " together "; 
- return 0;   
+    string origin;
+    cout << "Where are you from? ";
+    getline(cin, origin);
+
+    string movie;
+    cout << "What is your favorite movie? ";
+    getline(cin, movie);
+
+    cout << "Hello " << name << " from " << origin << endl;
+    cout << "Let's watch " << movie << " together";
+
+    return 0;
 }
+
