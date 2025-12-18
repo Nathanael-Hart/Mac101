@@ -1,2 +1,2 @@
 # Mac101
-this is where i will store classwork
+Labs and Homeworks for MAC101
