@@ -1,0 +1,30 @@
+#include <iostream>
+#include <string>   // Needed to work with names (strings)
+using namespace std;
+
+int main()
+{
+    string name;
+    double gpa;
+    //Asks for students name
+    cout << "Enter the student's name: ";
+    getline(cin, name);   // Reads the full name (including spaces)
+
+    //Ask for the students GPA
+    cout << "Enter the student's GPA: ";
+    cin >> gpa;
+
+    // Check if the student is eligible to graduate
+    if (gpa >= 2.0)
+    {
+        cout << "\nCongratulations, " << name << "!" << endl;
+        cout << "You are eligible to graduate." << endl;
+    }
+    else
+    {
+        cout << "\nSorry, " << name << "You lost!" << endl;
+        cout << "You are not eligible to graduate at this time." << endl;
+    }
+
+    return 0;
+}
